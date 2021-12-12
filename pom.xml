@@ -162,9 +162,9 @@
                         </configuration>
                     </plugin>
                     <plugin>
-                        <groupId>com.samaxes.maven</groupId>
-                        <artifactId>minify-maven-plugin</artifactId>
-                        <version>1.7.4</version>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.7.0</version>
                         <executions>
                             <execution>
                                 <id>default-minify</id>
@@ -196,9 +196,7 @@
                                     <jsFinalFile>combined-scripts.js</jsFinalFile>
                                     <jsEngine>CLOSURE</jsEngine>
                                 </configuration>
-                                <goals>
-                                    <goal>minify</goal>
-                                </goals>
+
                             </execution>
                         </executions>
                     </plugin>
